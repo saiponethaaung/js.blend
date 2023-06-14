@@ -20,7 +20,7 @@ function loadFile(blender_file, res, rej){
 
 /* This represents a parsed blendfile instance if parsing is successful. It will accept a string or a binary data object. Strings must be a valid URI to a blender file. Binary data may be in the form of an ArrayBuffer, TypedArray, or a Blob. Binary data must also contain the binary data of a blender file.*/
 
-JSBLEND = (fileuri_or_filedata, name = "")=>{
+export default JSBLEND = (fileuri_or_filedata, name = "")=>{
 
 	const promise = new Promise(
 		(res, rej) =>{
